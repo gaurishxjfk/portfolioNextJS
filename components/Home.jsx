@@ -14,7 +14,6 @@ const Home = () => {
                     <span className={`text-black underline ${theme === 'dark' ? 'decoration-purple-400 hover:decoration-blue-400' : 'decoration-orange-400 hover:decoration-orange-700'}`}>
                         <a
                             href='https://afourtech.com/'
-                            target='_blank'
                             className={`text-transparent ${theme === 'dark' ?' hover:bg-clip-text hover:bg-gradient-to-r from-blue-500 to-purple-500': ' hover:bg-clip-text hover:bg-gradient-to-r from-orange-600 to-yellow-500 '}`}
                         >Afour.</a>
                     </span><br/>

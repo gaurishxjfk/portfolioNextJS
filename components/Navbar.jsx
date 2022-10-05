@@ -18,33 +18,38 @@ const Navbar = () => {
 
   return (
     <nav className=" w-[70%] mx-auto flex justify-center gap-12 align-center">
-      <a href="https://www.instagram.com/gaurishxjfk/" target="_blank">
+      <a href="https://www.instagram.com/gaurishxjfk/" >
         <Image
           src={insta}
+          alt="insta"
           className="flex-1 scale-90 hover:scale-105"
         />
       </a>
-      <a href="https://github.com/nerdgaurish" target="_blank">
+      <a href="https://github.com/nerdgaurish" >
         <Image
           src={github}
+          alt="github"
           className="flex-1 scale-90 hover:scale-105"
         />
       </a>
-      <a href="https://twitter.com/gaurish0_0" target="_blank">
+      <a href="https://twitter.com/gaurish0_0">
         <Image
           src={twitter}
+          alt="twitter"
           className="flex-1 scale-90 hover:scale-105"
         />
       </a>
-      <a href="https://www.linkedin.com/in/gaurishnaik/" target="_blank">
+      <a href="https://www.linkedin.com/in/gaurishnaik/" >
         <Image
           src={linkedin}
+          alt="linkedin"
           className="flex-1 scale-90 hover:scale-105"
         />
       </a>
       <a onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         <Image
           src={theme === 'light' ? lightbulb : darkbulb}
+          alt="darkbulb"
           className="flex-1 scale-90 hover:scale-105"
         />
       </a>
