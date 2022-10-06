@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { useTheme } from 'next-themes'
-import { useRef, useState } from "react"
 import insta from '../public/logos/instagram.svg'
 import github from '../public/logos/github.svg'
 import twitter from '../public/logos/twitter.svg'
@@ -8,51 +7,52 @@ import linkedin from '../public/logos/linkedin.svg'
 import darkbulb from '../public/logos/dark-bulb.svg'
 import lightbulb from '../public/logos/ligh-bulb.svg'
 
+const socialLinks = [
+  {
+    "img": insta,
+    "link": "https://www.instagram.com/gaurishxjfk/",
+    "alt" : "instagram icon"
+  },
+  {
+    "img": github,
+    "link": "https://github.com/nerdgaurish",
+    "alt" : "github icon"
+  }
+  ,
+  {
+    "img": twitter,
+    "link": "https://twitter.com/gaurish0_0",
+    "alt" : "twitter icon"
+  }
+  ,
+  {
+    "img": linkedin,
+    "link": "https://www.linkedin.com/in/gaurishnaik/",
+    "alt" : "linkedin icon"
+  }
+]
 
 const Navbar = () => {
-
   const { theme, setTheme } = useTheme()
-  const aRef = useRef(null)
-
-
-
   return (
     <nav className=" w-[70%] mx-auto flex justify-center gap-12 align-center">
-      <a href="https://www.instagram.com/gaurishxjfk/" >
-        <Image
-          src={insta}
-          alt="insta"
-          className="flex-1 scale-90 hover:scale-105"
-        />
-      </a>
-      <a href="https://github.com/nerdgaurish" >
-        <Image
-          src={github}
-          alt="github"
-          className="flex-1 scale-90 hover:scale-105"
-        />
-      </a>
-      <a href="https://twitter.com/gaurish0_0">
-        <Image
-          src={twitter}
-          alt="twitter"
-          className="flex-1 scale-90 hover:scale-105"
-        />
-      </a>
-      <a href="https://www.linkedin.com/in/gaurishnaik/" >
-        <Image
-          src={linkedin}
-          alt="linkedin"
-          className="flex-1 scale-90 hover:scale-105"
-        />
-      </a>
-      <a onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+      { socialLinks.map((ele,index) => (
+          <a href={ele.link} target="_blank" rel="noopener noreferrer" key={index}>
+            <Image
+              src={ele.img}              
+              alt={ele.alt}
+              className="flex-1 scale-95 hover:scale-105 	"
+            />
+          </a>
+      ))}
+      
+      <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         <Image
           src={theme === 'light' ? lightbulb : darkbulb}
-          alt="darkbulb"
-          className="flex-1 scale-90 hover:scale-105"
+          alt="dark mode bulb icon"
+          className="flex-1 scale-95 hover:scale-105"
         />
-      </a>
+      </button>
     </nav>
   )
 }
