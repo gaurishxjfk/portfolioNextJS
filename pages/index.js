@@ -18,9 +18,10 @@ export const lightTheme = {
 
 export default function Landing() {
   return (
-    <>
+    <div >
       <Head>
         <title>Gaurish</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta
             name="Gaurish Naik"
             content="I am a fullstack developer currently working at Afour. I generally work with Javascript, React, Node and bunch of other things"
@@ -34,6 +35,6 @@ export default function Landing() {
       <footer className='text-center text-gray-500 mt-[5vh]'>
       designed in figma, built with nextjs and tailwind
       </footer>
-    </>    
+    </div>    
   )
 }
