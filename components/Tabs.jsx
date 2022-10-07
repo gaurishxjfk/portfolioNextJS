@@ -33,7 +33,7 @@ const logoArr = [
 const Tabs = () => {
   const { theme, setTheme } = useTheme(); 
   return (
-    <div className={` h-[540px] w-[75%] lg:w-[30%] md:w-[45%] sm:w-[60%] mx-auto rounded-3xl px-3 pb-3 text-center -rotate-6 ${theme === 'light' ? 'bg-white border-black drop-shadow-2xl stroke-black' : 'bg-stone-900/[0.9]'}`}>
+    <div className={` h-[540px] w-[75%] lg:w-[30%] md:w-[45%] sm:w-[60%] mx-auto rounded-3xl px-3 pb-3 text-center  ${theme === 'light' ? 'bg-white border-black drop-shadow-2xl stroke-black' : 'bg-stone-900/[0.9]'}`}>
       <div className=" h-[15%]  pt-7">
         <h5 className={`font-bold text-xl flex-1 text-transparent ${theme === 'light' ? lightTheme.head : darkTheme.head}`}>things i&#39;ve worked on...</h5>
       </div>      
