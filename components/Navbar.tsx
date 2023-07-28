@@ -19,6 +19,7 @@ const Navbar = () => {
           {navLinks.map((i) => (
             <Link
               href={i.href}
+              key={i.href}
               className={`bg-clip-text text-transparent font-bold underline decoration underline-offset-8                      
                         hover:bg-gradient-to-r hover:from-white hover:via-gray-300 hover:to-white
                         bg-gradient-to-r from-gray-300 via-white to-gray-300 hover:decoration-gray-600                      
