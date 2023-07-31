@@ -11,11 +11,11 @@ const Navbar = () => {
   const path = usePathname();
   return (
     <nav
-      className="w-[90%] md:w-[75%] mx-auto bg-gradient-to-r from-gray-300 via-gray-800 to-gray-300 rounded-full p-[1px]
-                hover:bg-gradient-to-r hover:from-gray-800 hover:via-gray-300 hover:to-gray-800 mt-[5vh]"
+      className="w-[90%] md:w-[75%] mx-auto hover:bg-gradient-to-r hover:from-gray-300 hover:via-gray-800 hover:to-gray-300 rounded-full p-[1px]
+                bg-gradient-to-r from-gray-800 via-gray-300 to-gray-800 mt-[5vh]"
     >
-      <div className="bg-black rounded-full ">
-        <span className="flex justify-around py-3 rounded-full ">
+      <div className="bg-black rounded-full">
+        <span className="flex justify-around py-3 rounded-full bg-blue-50 bg-opacity-5">
           {navLinks.map((i) => (
             <Link
               href={i.href}

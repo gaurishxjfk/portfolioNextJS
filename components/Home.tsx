@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
-import "../public/Vector.svg";
+import heroImg from "../public/static/images/main.jpg";
 
 const Home = () => {
   return (
     <div className=" text-center text-white flex flex-col justify-center items-center mt-[5%]">
       <div className="bg-gradient-to-r from-gray-800 via-gray-400 to-gray-800 p-1 rounded-full mb-4">
         <Image
-          src={"/../public/static/images/main.jpg"}
+          src={heroImg}
           width={150}
           height={150}
           alt="gaurish image"
