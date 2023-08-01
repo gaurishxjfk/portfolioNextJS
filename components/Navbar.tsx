@@ -15,7 +15,7 @@ const Navbar = () => {
                 bg-gradient-to-r from-gray-800 via-gray-300 to-gray-800 mt-[5vh]"
     >
       <div className="bg-black rounded-full">
-        <span className="flex justify-around py-3 rounded-full bg-blue-50 bg-opacity-5">
+        <span className="flex justify-around py-3 rounded-full bg-slate-50 bg-opacity-5">
           {navLinks.map((i) => (
             <Link
               href={i.href}

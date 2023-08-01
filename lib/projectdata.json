@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "BookMySeat",
+    "description": "this is project creaeted using ugit hub and this and that for basic usage",
+    "image": "/static/images/project.png",
+    "demoLink": "https://bookmyseat.vercel.app/",
+    "codeLink": "https://bookmyseat.vercel.app/"
+  },
+  {
+    "id": 2,
+    "name": "BookMySeat1",
+    "description": "1this is project creaeted using ugit hub and this and that for basic usage",
+    "image": "/static/images/project.png",
+    "demoLink": "https://bookmyseat.vercel.app/",
+    "codeLink": "https://bookmyseat.vercel.app/"
+  }
+]
