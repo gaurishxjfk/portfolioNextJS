@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from "next/script";
 
 export const metadata = {
   title: "Gaurish Naik",
@@ -12,6 +13,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-27T8Q8JF07" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-27T8Q8JF07');
+        `}
+      </Script>
       <body className="bg-black">{children}</body>
     </html>
   );
