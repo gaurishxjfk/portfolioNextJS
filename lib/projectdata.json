@@ -2,17 +2,25 @@
   {
     "id": 1,
     "name": "BookMySeat",
-    "description": "this is project creaeted using ugit hub and this and that for basic usage",
+    "description": "The Project was created for a office cubicle attendance, wherein employees can sign-in and reserve thier seats. Used framer motion for animation & supabase for DB & auth",
     "image": "/static/images/project.png",
     "demoLink": "https://bookmyseat.vercel.app/",
-    "codeLink": "https://bookmyseat.vercel.app/"
+    "codeLink": "https://github.com/gaurishxjfk/bookMySeat"
   },
   {
     "id": 2,
-    "name": "BookMySeat1",
-    "description": "1this is project creaeted using ugit hub and this and that for basic usage",
-    "image": "/static/images/project.png",
-    "demoLink": "https://bookmyseat.vercel.app/",
-    "codeLink": "https://bookmyseat.vercel.app/"
+    "name": "Email Manager",
+    "description": "The project is basically clone of outlook app. User can create, edit, delete folders in sidebar; Also filter emails based on read,unread etc. Created using vite✨",
+    "image": "/static/images/outlook.png",
+    "demoLink": "https://outlookclone.vercel.app/",
+    "codeLink": "https://github.com/gaurishxjfk/outlook-clone"
+  },
+  {
+    "id": 3,
+    "name": "Web Scraper in Next JS",
+    "description": "The project is basically a F1 Calender for 2023. It is done by web scrapping their official website https://www.formula1.com . The project is entirely done in NextJS",
+    "image": "/static/images/f1.png",
+    "demoLink": "https://f1calender.vercel.app/",
+    "codeLink": "https://github.com/gaurishxjfk/web-scrapping-next-js"
   }
 ]
