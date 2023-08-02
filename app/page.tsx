@@ -7,7 +7,6 @@ const page = () => {
   return (
     <MainLayout>
       <Home />
-      <Footer />
     </MainLayout>
   );
 };

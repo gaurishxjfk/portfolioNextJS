@@ -8,7 +8,7 @@ const ProjectCard = ({ project }) => {
       className="bg-gradient-to-r from-gray-800 via-gray-300 to-gray-800 pb-[2px] px-[1px] rounded-lg cursor-pointer
                   hover:shadow-[_0_20px_40px_rgba(29,29,29,_1)] hover:scale-105 transition-all ease-linear duration-100"
     >
-      <div className="rounded-lg h-[55vh] bg-gradient-to-tr from-slate-900 via-black  to-slate-900 to-80% w-[43vh]">
+      <div className="rounded-lg h-[55vh] bg-gradient-to-tr from-slate-900 via-black  to-slate-900 to-80% w-[40vh] sm:w-[43vh]">
         <Image
           src={project.image}
           alt="project cover"

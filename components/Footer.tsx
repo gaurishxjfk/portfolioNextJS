@@ -22,18 +22,22 @@ const socialLinks = [
 
 const Footer = () => {
   return (
-    <footer className="w-[70%] mx-auto flex justify-center gap-12 align-center">
-      {socialLinks.map((ele, index) => (
-        <a
-          href={ele.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          key={index}
-          className="border p-1 rounded-md border-black hover:border-gray-200"
-        >
-          {ele.img}
-        </a>
-      ))}
+    <footer className="my-10">
+      <div className="w-[70%] mx-auto flex justify-center gap-12 align-center">
+        {socialLinks.map((ele, index) => (
+          <a
+            href={ele.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={index}
+            className="border p-1 rounded-md border-black hover:border-gray-200"
+          >
+            {ele.img}
+          </a>
+        ))}
+      </div>
+
+      <p className="text-center text-slate-700 mt-4">Crafted with ❤️</p>
     </footer>
   );
 };
