@@ -19,7 +19,7 @@ const ProjectCard = ({ project }) => {
         <div className="h-[55%] flex flex-col">
         <div className="text-center px-2">
           <h2 className="my-2 font-bold">{project.name}</h2>
-          <p className="text-xs text-slate-300 ">
+          <p className="text-xs text-slate-300 line-clamp-5">
             {project.description}
           </p>
         </div>
