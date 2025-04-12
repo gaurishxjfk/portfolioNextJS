@@ -15,10 +15,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Log AWS Region and Role ARN
+      - name: Verify AWS Role Assumption
         run: |
-          echo "AWS_REGION: ${{ secrets.AWS_REGION }}"
-          echo "AWS_ROLE_ARN: ${{ secrets.AWS_ROLE_ARN }}"
+          aws sts get-caller-identity
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
