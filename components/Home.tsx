@@ -20,12 +20,12 @@ const Home = () => {
         Fullstack developer, currently working @
         <span className={`underline decoration-2 decoration-gray-400`}>
           <a
-            href="https://afourtech.com/"
+            href="https://zimetrics.com/"
             target="_blank"
             rel="noopener noreferrer"
             className={``}
           >
-            Afour.
+            Zimetrics.
           </a>
         </span>
       </p>
