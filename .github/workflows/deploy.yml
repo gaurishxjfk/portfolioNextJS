@@ -15,15 +15,15 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Verify AWS Role Assumption
-        run: |
-          aws sts get-caller-identity
-
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Verify AWS Role Assumption
+        run: |
+          aws sts get-caller-identity
 
       - name: Install dependencies
         run: npm install
