@@ -30,8 +30,8 @@ const Home = () => {
         </span>
       </p>
       <p className="mx-2 mb-4">
-        🚀 Crafting digital experiences with <br /> React, NextJS, TypeScript,
-        TailwindCSS, and NodeJS ✨
+        🚀 Crafting beautiful user experiences with <br /> React, NextJS, TypeScript,
+        TailwindCSS, and AWS ✨
       </p>
     </div>
   );

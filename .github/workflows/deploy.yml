@@ -40,4 +40,12 @@ jobs:
             echo "❌ 'out/' directory not found. Build may have failed."
             exit 1
           fi
+
+      - name: Invalidate CloudFront Cache
+        run: |
+          echo "🚀 Invalidating CloudFront cache..."
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*" \
+            --no-cli-pager
       
